@@ -5,15 +5,15 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+
 [dependencies]
 flo_draw = "0.3.1"
-rustfft = "6.1.0"
 flo_canvas = "0.3.1"
-rand = "0.8.5"
+svg2pts = { path = "./lib/svg2pts"}
+num = "0.4.1"
+rustfft = "6.1.0"
 
-[[bin]]
-name = "fourier"
-path = "src/fourier.rs"
+
 [[bin]]
 name = "draw"
 path = "src/draw.rs"
