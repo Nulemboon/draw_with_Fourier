@@ -159,12 +159,12 @@ fn main() {
                 gc.new_path();
                 for i in 0..wave.len() {
                     gc.draw(Path(Line(wave[i].0 as f32, wave[i].1 as f32)));
+                    // gc.draw(Path())
                 }
                 gc.stroke_color(Color::Rgba(0.19, 0.4, 0.6, 1.0));
                 gc.line_width(5.0);
                 gc.stroke();
 
-            
                 time += (2.0 * PI) / n as f32;
 
                 if time >= 4.0 * 3.14 {
